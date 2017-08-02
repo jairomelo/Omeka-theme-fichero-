@@ -19,7 +19,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 $sortLinks[__('Título')] = 'Dublin Core,Title';
 $sortLinks[__('Lugar')] = 'Dublin Core,Spatial Coverage';
 $sortLinks[__('Fecha de creación')] = 'added';
-$sortLinks[__('Fecha del elemento')] = 'Dubli Core,Date';
+$sortLinks[__('Fecha del elemento')] = 'Dublin Core,Date';
 ?>
 <div id="sort-links">
     <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
