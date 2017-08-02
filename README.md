@@ -1,2 +1,2 @@
 # Omeka-theme-fichero-
-Customization of Omeka theme "Dublin" for some personal purposes :)
+Customization of the Omeka theme "Dublin" for some personal purposes :)
