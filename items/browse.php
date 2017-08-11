@@ -29,7 +29,7 @@ $sortLinks[__('Fecha del elemento')] = 'Dublin Core,Date';
 
 <?php foreach (loop('items') as $item): ?>
 <div class="item record">
-    <h2><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink')); ?></h2>
+    <h2><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink', 'target'=>'_blank')); ?></h2>
     <div class="item-meta">
     <?php if (metadata('item', 'has files')): ?>
     <div class="item-img">
