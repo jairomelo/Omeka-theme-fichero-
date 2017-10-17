@@ -42,9 +42,18 @@ $sortLinks[__('Fecha del elemento')] = 'Dublin Core,Date';
         <?php echo $description; ?>
     </div>
     <?php endif; ?>
+
+    <!--agrega la fecha a cada elemento -->
     <?php if ($date = metadata('item', array('Dublin Core', 'Date'))): ?>
     <div class="item-description">
         <?php echo $date; ?>
+    </div>
+	<?php endif; ?>
+
+	<!--agrega la fuente a cada elemento -->
+    <?php if  ($fuente = metadata('item', array('Dublin Core', 'Source'))): ?>
+    <div class="item-description">
+    	<?php echo $fuente; ?>
     </div>
     <?php endif; ?>
 
