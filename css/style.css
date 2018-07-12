@@ -1250,10 +1250,13 @@ nav + .exhibit {
   display: inline;
 }
 
+<<<<<<< HEAD
 .item-text a.show {
   padding-left: 5px;
 }
 
+=======
+>>>>>>> 06d7172e4e964ef292bdf29d666b94c7f3f01ded
 .sort-label {
   display: inline-block;
 }
