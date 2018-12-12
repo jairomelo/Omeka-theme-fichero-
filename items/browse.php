@@ -20,6 +20,7 @@ $sortLinks[__('Título')] = 'Dublin Core,Title';
 $sortLinks[__('Lugar')] = 'Dublin Core,Spatial Coverage';
 $sortLinks[__('Fecha de creación')] = 'added';
 $sortLinks[__('Fecha del elemento')] = 'Dublin Core,Date';
+$sortLinks[__('Capítulo')] = 'Dublin Core,Capitulo';
 ?>
 <div id="sort-links">
     <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
@@ -54,6 +55,13 @@ $sortLinks[__('Fecha del elemento')] = 'Dublin Core,Date';
     <?php if  ($fuente = metadata('item', array('Dublin Core', 'Source'))): ?>
     <div class="item-description">
     	<?php echo $fuente; ?>
+    </div>
+    <?php endif; ?>
+
+    <!--agrega el capítulo de cada elemento -->
+    <?php if ($capitulo = metadata('item', array('Dublin Core', 'Capitulo'))): ?>
+    <div class="item-description">
+        <?php echo $capitulo; ?>
     </div>
     <?php endif; ?>
 
